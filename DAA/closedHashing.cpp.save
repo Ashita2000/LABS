@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int search(std::vector<int> v[10],int input){
+	for (auto x:v[input%10])
+	{
+		if(x==input)
+			return x;
+	}
+	return -1;
+}
+
+int main(int argc, char const *argv[])
+{
+	std::vector<int> v[10];
+
+	cout<<"\nEnter number of elements to insert :";
+	int n,input;
+	cin>>n;
+	cout<<"\nEnter "<<n<<" elements :";
+
+	for (int i = 0; i < n; ++i)
+	{
+		cin>>input;
+		v[input%10].push_back(input);
+	}
+
+	cout<<"\nEnter the element to search :";
+	cin>>input;
+
+	int output=search(v,input);
+	if(output==-1)
+		cout<<"\nElement not found";
+	else
+		cout<<"\n"<<output<<" is present in hash-table";
+	return 0;
+}

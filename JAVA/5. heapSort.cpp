@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+void heapSort
+
+int main(){
+    int *arr,n;
+    cout<<"\nEnter the size array : "<<endl;
+    cin>>n;
+    arr=new int[n];
+    cout<<"\nEnter the array."<<endl;
+    for(int i=0;i<n;i++)
+        cin>>arr[i];
+
+    cout<<"\nEntered array is :\n";
+    display(arr,n);
+
+    heapSort(a,n-1);
+
+    return 0;
+}

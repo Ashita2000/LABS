@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"\nEnter the number of ";
+    cin>>n;
+    vector<float> v
+    
+    return 0;
+}

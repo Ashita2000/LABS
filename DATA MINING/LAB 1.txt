@@ -1,0 +1,22 @@
+data set is a combination of data having common features
+features : attributes of data 
+after that we do non paramertric descriptive analysis : we find out mean value
+(how many students lie above and below avg)
+
+2nd non-parametric descriptive 
+analysis uses median (middle value)
+
+mode : occurances of data values in data set
+
+SD and variance: 
+
+import pandas as pd
+df=pd.read_csv("https://gist.githubusercontent.com/curran/a08a1080b88344b0c8a7/raw/639388c2cbc2120a14dcf466e85730eb8be498bb/iris.csv")
+print(df.shape)
+print(df.info)
+df.mean()
+df.median()
+df.mode()
+df.std()
+df.var()
+df.describe()
